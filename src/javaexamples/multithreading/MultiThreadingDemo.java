@@ -17,6 +17,11 @@ public class MultiThreadingDemo {
             e.printStackTrace();
         }
         
+        System.out.println("Producer & consumer example:");
+        Q q = new Q();
+        new Producer(q);
+        new Consumer(q);
+        
         System.out.println("All threads has been finished");
     }
 }
